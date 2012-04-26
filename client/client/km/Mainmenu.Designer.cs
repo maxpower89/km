@@ -40,15 +40,15 @@
             this.emailLabel = new System.Windows.Forms.Label();
             this.functionLabel = new System.Windows.Forms.Label();
             this.aboutMe = new System.Windows.Forms.TabPage();
-            this.interestTab = new System.Windows.Forms.TabPage();
-            this.documentsTab = new System.Windows.Forms.TabPage();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.docEdit = new System.Windows.Forms.Button();
-            this.intEdit = new System.Windows.Forms.Button();
-            this.aboutSave = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.aboutSave = new System.Windows.Forms.Button();
+            this.interestTab = new System.Windows.Forms.TabPage();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.intEdit = new System.Windows.Forms.Button();
+            this.documentsTab = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.docEdit = new System.Windows.Forms.Button();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.aboutMe.SuspendLayout();
             this.interestTab.SuspendLayout();
@@ -157,6 +157,23 @@
             this.aboutMe.Text = "About me";
             this.aboutMe.UseVisualStyleBackColor = true;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(11, 21);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(532, 244);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
+            // 
+            // aboutSave
+            // 
+            this.aboutSave.Location = new System.Drawing.Point(549, 242);
+            this.aboutSave.Name = "aboutSave";
+            this.aboutSave.Size = new System.Drawing.Size(75, 23);
+            this.aboutSave.TabIndex = 1;
+            this.aboutSave.Text = "Save";
+            this.aboutSave.UseVisualStyleBackColor = true;
+            // 
             // interestTab
             // 
             this.interestTab.Controls.Add(this.listBox2);
@@ -168,6 +185,23 @@
             this.interestTab.TabIndex = 1;
             this.interestTab.Text = "Interest";
             this.interestTab.UseVisualStyleBackColor = true;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(6, 6);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(350, 251);
+            this.listBox2.TabIndex = 2;
+            // 
+            // intEdit
+            // 
+            this.intEdit.Location = new System.Drawing.Point(495, 271);
+            this.intEdit.Name = "intEdit";
+            this.intEdit.Size = new System.Drawing.Size(75, 23);
+            this.intEdit.TabIndex = 1;
+            this.intEdit.Text = "Edit";
+            this.intEdit.UseVisualStyleBackColor = true;
             // 
             // documentsTab
             // 
@@ -181,6 +215,24 @@
             this.documentsTab.Text = "Documents";
             this.documentsTab.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 6);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(350, 251);
+            this.listBox1.TabIndex = 1;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // docEdit
+            // 
+            this.docEdit.Location = new System.Drawing.Point(495, 271);
+            this.docEdit.Name = "docEdit";
+            this.docEdit.Size = new System.Drawing.Size(75, 23);
+            this.docEdit.TabIndex = 0;
+            this.docEdit.Text = "Edit";
+            this.docEdit.UseVisualStyleBackColor = true;
+            // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.documentsTab);
@@ -192,57 +244,6 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(702, 332);
             this.tabControl.TabIndex = 0;
-            // 
-            // docEdit
-            // 
-            this.docEdit.Location = new System.Drawing.Point(495, 271);
-            this.docEdit.Name = "docEdit";
-            this.docEdit.Size = new System.Drawing.Size(75, 23);
-            this.docEdit.TabIndex = 0;
-            this.docEdit.Text = "Edit";
-            this.docEdit.UseVisualStyleBackColor = true;
-            // 
-            // intEdit
-            // 
-            this.intEdit.Location = new System.Drawing.Point(495, 271);
-            this.intEdit.Name = "intEdit";
-            this.intEdit.Size = new System.Drawing.Size(75, 23);
-            this.intEdit.TabIndex = 1;
-            this.intEdit.Text = "Edit";
-            this.intEdit.UseVisualStyleBackColor = true;
-            // 
-            // aboutSave
-            // 
-            this.aboutSave.Location = new System.Drawing.Point(549, 242);
-            this.aboutSave.Name = "aboutSave";
-            this.aboutSave.Size = new System.Drawing.Size(75, 23);
-            this.aboutSave.TabIndex = 1;
-            this.aboutSave.Text = "Save";
-            this.aboutSave.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(350, 251);
-            this.listBox1.TabIndex = 1;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(6, 6);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(350, 251);
-            this.listBox2.TabIndex = 2;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(11, 21);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(532, 244);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
             // 
             // Mainmenu
             // 

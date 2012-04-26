@@ -47,3 +47,17 @@ D:\git_stenden_fork\client\client\km\obj\Debug\km.Properties.Resources.resources
 D:\git_stenden_fork\client\client\km\obj\Debug\km.csproj.GenerateResource.Cache
 D:\git_stenden_fork\client\client\km\obj\Debug\km.Mainmenu.resources
 D:\git_stenden_fork\client\client\km\obj\Debug\km.Register.resources
+C:\Users\Erdinç\km\client\client\km\bin\Debug\km.exe
+C:\Users\Erdinç\km\client\client\km\bin\Debug\km.pdb
+C:\Users\Erdinç\km\client\client\km\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Erdinç\km\client\client\km\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Erdinç\km\client\client\km\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Erdinç\km\client\client\km\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.Form1.resources
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.Login.resources
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.Mainmenu.resources
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.Properties.Resources.resources
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.Register.resources
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.csproj.GenerateResource.Cache
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.exe
+C:\Users\Erdinç\km\client\client\km\obj\Debug\km.pdb
