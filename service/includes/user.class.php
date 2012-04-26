@@ -2,7 +2,7 @@
 	class user{
 		
 		var $userdata;
-		
+		//user constructor.. en check of inglogd
 		function user(){
 			global $sql;
 			$hash=$_POST['Uhash'];
@@ -15,10 +15,12 @@
 			}
 		}
 		
+		//retuneerd of ingelogd
 		function loggedin(){
 			return is_array($this->userdata);
 		}
 		
+		//kijkt of je script mag laden die je wil laden
 		function mag(){
 			global $config;
 			if($this->loggedin()||$config['noLogin'][$_POST['script']]){
@@ -28,6 +30,8 @@
 			}
 		}
 		
+		
+		//doe een poging om in te loggen
 		function login($username,$password){
 			global $sql;
 			$query=$sql->query("select * from user where password='".md5($password)."' && username='".$username."'");

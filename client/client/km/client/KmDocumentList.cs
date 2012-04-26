@@ -7,10 +7,12 @@ namespace km.client
 {
     class KmDocumentList: KmDataobject
     {
-
+        //basis velden
         public List<KmDocument> list;
         public string jsonIn = "";
 
+
+        //constructors.. wil je zoeken, een user definieren etc.
         public KmDocumentList(KmConnection con) : base(con) {
             list=new List<KmDocument>();
             load(); }
@@ -41,10 +43,12 @@ namespace km.client
 
 
 
-
+        //gegevens ophalen
         public override void load()
         {
+            //gegevens inladen via internet
             Dictionary<string, Dictionary<string,string>> data = con.loadDoubleDictionary("loadDocumentlist",this.jsonIn);
+            //en objecten van aanmaken
             foreach(KeyValuePair<string,Dictionary<string,string>> document in data){
                 
                 KmDocument documentObject = new KmDocument(con, document.Value);
