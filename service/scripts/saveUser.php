@@ -10,6 +10,9 @@
 		}		
 	}
 	
+	if($_POST['id']==-1){
+		$_POST['id']=$user->userdata['id'];
+	}
 	
 	if($user->userdata['administrator']||$_POST['id']==$user->userdata['id']){
 
