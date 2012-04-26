@@ -1,8 +1,8 @@
 <?php
-	$config['sql']['host']="localhost";
-	$config['sql']['user']="root";
-	$config['sql']['pass']="";
-	$config['sql']['name']="km";
+	$config['sql']['host']="http://korhelf59.fiftynine.axc.nl/stenden/kennismanagement/service/";
+	$config['sql']['user']="korhelf59_mi4f";
+	$config['sql']['pass']="Kz70dJIh";
+	$config['sql']['name']="korhelf59_mi4f";
 	
 	$config['noLogin']['login']=true;
 	
