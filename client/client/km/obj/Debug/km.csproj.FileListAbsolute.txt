@@ -33,3 +33,17 @@ C:\Users\mark\Documents\My Dropbox\school\3e jaar\kennis managemeent\Kennis mana
 C:\Users\mark\Documents\My Dropbox\school\3e jaar\kennis managemeent\Kennis management\Sourcecode\client\client\km\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Erdinç\Documents\My Dropbox\Kennis management\Sourcecode\client\client\km\obj\Debug\km.exe
 C:\Users\Erdinç\Documents\My Dropbox\Kennis management\Sourcecode\client\client\km\obj\Debug\km.pdb
+D:\git_stenden_fork\client\client\km\obj\Debug\km.exe
+D:\git_stenden_fork\client\client\km\obj\Debug\km.pdb
+D:\git_stenden_fork\client\client\km\bin\Debug\km.exe
+D:\git_stenden_fork\client\client\km\bin\Debug\km.pdb
+D:\git_stenden_fork\client\client\km\bin\Debug\Newtonsoft.Json.dll
+D:\git_stenden_fork\client\client\km\bin\Debug\Newtonsoft.Json.pdb
+D:\git_stenden_fork\client\client\km\bin\Debug\Newtonsoft.Json.xml
+D:\git_stenden_fork\client\client\km\obj\Debug\ResolveAssemblyReference.cache
+D:\git_stenden_fork\client\client\km\obj\Debug\km.Form1.resources
+D:\git_stenden_fork\client\client\km\obj\Debug\km.Login.resources
+D:\git_stenden_fork\client\client\km\obj\Debug\km.Properties.Resources.resources
+D:\git_stenden_fork\client\client\km\obj\Debug\km.csproj.GenerateResource.Cache
+D:\git_stenden_fork\client\client\km\obj\Debug\km.Mainmenu.resources
+D:\git_stenden_fork\client\client\km\obj\Debug\km.Register.resources
