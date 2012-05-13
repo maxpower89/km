@@ -1,11 +1,9 @@
 <?php
-	//als document al bestaat
 	if($_POST['id']){
-		
-		//documetn ophalen
+		//als hij geupdated moet worden
 		$result=$sql->result("select * from documents where id='".$_POST['id']."'");
 
-		//document updaten
+		//updaten
 		$sql->query("
 			update documents set
 				file='".$_POST['file']."',
@@ -15,7 +13,8 @@
 				where id='".$_POST['id']."'
 			");
 		
-		//als er een nieuw bestand is geupload.. sla deze op
+		
+		//bestand uploaden
 		if($_POST['fileData']){
 			$filedata=base64_decode(urldecode($_POST['filedata']));
 			$handle=fopen("data/".$result['location'],"w+");
@@ -24,19 +23,20 @@
 		}
 		$json->add("success",1);
 	}else{
+		//anders nieuw document aanmaken
 		if($_POST['fileData']&&$_POST['file']){
-			//bepaal nieuwe bestandlocatie
 			$location=base64_encode(time()."_".$_POST['file']."_".$user->userdata['id']);
-			//sla basis informatie op
 			$sql->query("
 				insert into documents set
 				file='".$_POST['file']."',
 				title='".$_POST['title']."',
 				description='".$_POST['description']."',
 				location='".$location."',
-				tags='".$_POST['tags']."'
+				tags='".$_POST['tags']."',
+				user='".$user->userdata['id']."'
 			");
-			//sla het bestand op
+			
+			//en opslaan
 			$filedata=base64_decode($_POST['fileData']);
 			$handle=fopen("data/".$location,"w+");
 			fwrite($handle,$filedata);

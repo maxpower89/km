@@ -13,7 +13,7 @@ namespace km
     public partial class Login : Form
     {
         // Connectie database
-        KmConnection con = new KmConnection("http://korhelf59.fiftynine.axc.nl/stenden/kennismanagement/service/");
+        KmConnection con = new KmConnection("http://localhost/km/");
         public Login()
         {
             InitializeComponent();

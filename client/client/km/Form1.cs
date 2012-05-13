@@ -12,7 +12,7 @@ namespace km
 {
     public partial class Form1 : Form
     {
-        KmConnection con = new KmConnection("http://korhelf59.fiftynine.axc.nl/stenden/kennismanagement/service/");
+        KmConnection con = new KmConnection("http://localhost/km/");
         public Form1()
         {
             InitializeComponent();
